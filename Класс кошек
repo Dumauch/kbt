@@ -1,0 +1,10 @@
+class Cats:
+    def __init__(self,w=5,color='orange'):
+      self.w=w
+      self.color=color
+a=Cats(3,"black")
+b=Cats(2,"White")
+c=Cats()
+print(a.w, a.color)
+print(b.w, b.color)
+print(c.w, c.color)
