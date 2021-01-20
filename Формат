@@ -1,0 +1,10 @@
+i=[4,423,5,9235,753,63,98,1114,42,10] 
+for a in range(i)  :
+    if a%2!=0:
+        a=a/4
+c=('{: }'.format(a))
+for a1 in range(i) :
+    if a1%2==0:
+        a1=a1/10
+b=('{: }'.format(a1))
+print(c,b)
