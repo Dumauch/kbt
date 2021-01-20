@@ -1,0 +1,31 @@
+a=[
+[1522,2421,322,442,5],
+[624,812,53,523,768],
+[12,14,17,15,6],
+[1,2,7,99,4],
+[4,5,7,87,4]
+]
+a1=[]
+a2=[]
+a3=[]
+a4=[]
+print('Список списков',a)
+
+for ty in range(0,5):
+    for tu in range(0,5):
+        a1.append(a[ty][tu])
+        a1.sort()
+        a2.append(a[ty][tu])
+        a2.sort(reverse=True)
+        if (a[ty][tu]%2==0):
+            a3.append(a[ty][tu])
+        if (a[ty][tu]%3==0):
+            a4.append(a[ty][tu])
+for ty in range(0,5):
+    for tu in range(0,5):
+        if (a[ty][tu] % 2 != 0):
+            a3.append(a[ty][tu])
+print('Сортировка по возрастанию',a1)
+print('Сортировка по убыванию',a2)
+print('С начала четные, потом нечетные',a3)
+print('Числа, делящиеся на 3',a4)
